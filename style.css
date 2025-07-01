@@ -300,13 +300,33 @@ body {
 }
 
 /* Individual Platform Colors */
-.instagram { background: #e1306c; }
-.linkedin  { background: #0077b5; }
-.github    { background: #333; }
-.twitter   { background: #000000; }
-.facebook  { background: #3b5998; }
-.reddit    { background: #ff4500; }
-.pinterest { background: #bd081c; }
+.instagram {
+  background: #e1306c;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.github {
+  background: #333;
+}
+
+.twitter {
+  background: #000000;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.reddit {
+  background: #ff4500;
+}
+
+.pinterest {
+  background: #bd081c;
+}
 
 .social-icon {
   display: inline-flex;
@@ -318,19 +338,21 @@ body {
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 2px solid transparent; /* default transparent border */
+  border: 2px solid transparent;
+  /* default transparent border */
 }
 
 .social-icon:hover {
   opacity: 0.95;
   transform: scale(1.05);
-  border: 2px solid #fff; /* white border on hover */
+  border: 2px solid #fff;
+  /* white border on hover */
 }
 
 .contact-section {
   padding: 80px 20px;
   min-height: 100vh;
-  
+
 }
 
 .form-control,
@@ -338,7 +360,7 @@ body {
   background-color: #121212;
   border: 1px solid #1e3a5f;
   color: white;
-    box-shadow: 0 0 10px rgb(23, 37, 54);
+  box-shadow: 0 0 10px rgb(23, 37, 54);
 }
 
 .form-control:focus,
@@ -369,7 +391,8 @@ label {
   font-weight: bold;
   border-radius: 5px;
   transition: all 0.3s ease;
-  text-decoration: none;;
+  text-decoration: none;
+  ;
 }
 
 .contact-btn:hover {
@@ -380,6 +403,30 @@ label {
 
 @media (max-width: 576px) {
   .navbar-brand {
-    margin-left: -20px !important; /* Adjust as needed */
+    margin-left: -20px !important;
+    /* Adjust as needed */
   }
+}
+
+.custom-toggler {
+  border: none;
+  background: transparent;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  /* consistent spacing between lines */
+  height: auto;
+}
+
+.toggler-line {
+  width: 25px;
+  /* same width */
+  height: 3px;
+  /* same height */
+  background-color: white;
+  /* or your preferred color */
+  border-radius: 2px;
 }
